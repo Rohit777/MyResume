@@ -1,0 +1,331 @@
+% -- Encoding UTF-8 without BOM
+
+\documentclass[]{cv-style}          % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+                                    % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+\usepackage{tikz}
+\definecolor{frontColor}{rgb}{0.22,0.45,0.70}% light blue
+\definecolor{backColor}{RGB}{200,200,200}% grey
+\newcommand{\grade}[1]{%
+    \begin{tikzpicture}
+    \clip (1em-.4em,-.35em) rectangle (5em +.5em ,1em);
+    \foreach \x in {1,2,...,5}{
+        \path[{fill=backColor}] (\x em,0) circle (.35em);
+    }
+    \begin{scope}
+    \clip (1em-.4em,-.35em) rectangle (#1em +.5em ,1em);
+    \foreach \x in {1,2,...,5}{
+        \path[{fill=frontColor}] (\x em,0) circle (.35em);
+    }
+    \end{scope}
+
+    \end{tikzpicture}%
+}
+
+\sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
+
+\begin{document}
+
+\header{Rohit }{Rana }           % Your name
+\lastupdated
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
+
+\begin{aside}
+%
+\section{Contact}
+New Delhi, IN
+~
+Mobile no:
++91 8800211079
+~
+Email:
+rohitrana.r07@ducic.ac.in
+%
+\section{Industry Knowledge}
+\begin{flushright}
+Front End Web Development:\\ \grade{5}  
+Back End Web Development:\\ \grade{4}
+Data Science:\\ \grade{3.5}  
+Machine learning:\\ \grade{3}
+\end{flushright}
+%
+\section{Languages \&
+   Frameworks}
+C | C++ | Nodejs
+Python | PHP | MySQL
+HTML5 | CSS3
+JavaScript | Angular 2+
+AJAX | Bootstrap  Typescript
+Alexa skill Kit for Nodejs
+%
+
+\section{Tools \&
+   Technologies}
+Git | GitHub | VS Code
+Sublime Text | Plesk 
+Firebase | Cpanel
+Window XP \& above
+Amazon Developer Console | Ubantu
+%
+\end{aside}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {May-Sept 2018}
+  {Analytics2Action}
+  {Canada(remote)}
+  {\jobtitle{Data Science Intern}\\
+  five months experience as Intern of Data Science  and Sentiment Analysis in Analytics2Action}
+%------------------------------------------------
+\entry
+  {Feb 2018-Present}
+  {Kanshiram Welfare Foundation}
+  {Delhi, India}
+  {\jobtitle{Web Development Intern}\\
+  Developing and Managing Non Profit Organization's Website. \\\
+  Detailed achievements:
+  \begin{itemize}
+    \item Get Detail understanding in non commercial Website.
+     
+     \item Good Knowledge in data Handling and web Hosting.
+     
+     
+  \end{itemize}}
+%------------------------------------------------
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2013--2016}
+{B.Tech {\normalfont in Information Technologies \& Mathematical Innovation}}
+{Cluster Innovation Center, University of Delhi}
+
+
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	OTHER QUALIFICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{May-Sept 2018}
+{Sentiment Analysis }
+{Analytics2Action}
+{Develop a sentiment analysis model to predict sentiment of call center data }
+{\vspace{-0.3cm}}
+\end{entrylist}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{Feb-2018}
+{NGO Website}
+{Kanshiram Welfare Foundation}
+{Develop no commercial Website on PHP for Kanshiram Welfare Foundation  }
+{\vspace{-0.3cm}}
+\end{entrylist}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{July-2017}
+{Line Following Robot }
+{Cluster Innovation Center}
+{Complete Line Following Robot Arduino project on Robotics }
+{\vspace{-0.3cm}}
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{Jan-2017}
+{Voice Control Wheelchair}
+{Cluster Innovation Center}
+{Developed A wheelchair prototype version which can be controlled by voice commands}
+{\vspace{-0.3cm}}
+
+
+%------------------------------------------------
+\end{entrylist}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{Jan-2018}
+{AR Book}
+{Cluster Innovation Center}
+{Developed Augmented Reality Based children alphabet book. }
+{\vspace{-0.3cm}}
+
+
+%------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	Achievement  SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Achievements}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{}
+{Alexa Skill Hackathon Winner}
+{}
+{}
+
+%------------------------------------------------
+\end{entrylist}
+\begin{entrylist}
+\entry
+{}
+{ Got selected in PyTorch Scholarship Challenge from Facebook on Udacity }
+{}
+{}
+
+%------------------------------------------------
+\end{entrylist}
+
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+  \vspace{-0.3cm}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{}
+{ Designing Websites:}
+{}
+{Develop creative design and animation in website}
+
+\end{entrylist}\
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{}
+{ Deep learning}
+{}
+{Good Knowledge in deep learning and pytorch.  }
+\end{entrylist}\
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{}
+{AR/VR :}
+{}
+{Good Knowledge in AR and VR and designed many children AR BOOK
+}
+
+\end{entrylist}\
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+  \vspace{-0.2cm}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+  {}
+  {Good Management skills}
+  {}
+  {\jobtitle{}\  Excellent Management Skills which require in company}
+%------------------------------------------------
+\entry
+  {}
+  {Programming Ability }
+  {}
+  {\jobtitle{}\  Good programming skills in Python, PHP and JavaScript.}
+  
+  \entry
+  {}
+  { Quick Learning Capability}
+  {}
+  {\jobtitle{}\ Quick learning all the fundamental of the Software Technology    }
+  
+  \entry
+  {}
+  {Good in Communication }
+  {}
+  {\jobtitle{}\  Know two different languages }
+  
+%------------------------------------------------
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Hobby SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Hobbies}
+  \vspace{-0.2cm}
+
+\begin{entrylist}
+%------------------------------------------------
+
+%------------------------------------------------
+\entry
+  {}
+  {Learn about new Web technology }
+  {}
+  {\jobtitle{}\ Learn about the latest technology which helpful in company and Improve my
+     programming Skills as well.}
+  
+  \entry
+  {}
+  {Learn about different model in deep learning and data pre-processing method  }
+  {}
+  {\jobtitle{}\ Find out Solution which arise in deep-learning on daily base 
+  \begin{itemize}
+
+     
+     
+  \end{itemize}}
+  \entry
+  {}
+  {Daily Morning Walk }
+  {}
+  {\jobtitle{}\ Go morning walk on daily base. }
+  \entry
+  {}
+  {Attend technological meet up and summit }
+  {}
+  {\jobtitle{}\ Like GDG, amazon developer summit, hands on workshop... }
+  
+%------------------------------------------------
+%------------------------------------------------
+
+\end{entrylist}
+
+
+\end{document}
